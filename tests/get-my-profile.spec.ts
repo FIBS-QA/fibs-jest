@@ -1,12 +1,11 @@
 
 const express = require('express');
 const request = require('supertest');
-// const expect = require('chai').expect;
 
 const app = express();
 
 describe('Fressnapf webshop', () => {
-  it('tests /profilom get request', async() => {
+  it('test my profile endpoint', async() => {
     request(app)
       .get('https://webshop.fressnapf.hu/profilom')       
       .end((err, res) =>{
