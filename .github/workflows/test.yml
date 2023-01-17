@@ -24,9 +24,11 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Install Dependencies
+      - name: Remove node modules
         run: sudo rm -rf node_modules
-             npm install npm-install-all -g
+      
+      - name: Install Dependencies      
+        run: npm install npm-install-all -g
 
       - name: Run the tests
         run: npm test
