@@ -25,6 +25,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies
+        run: sudo rm -rf node_modules
         run: npm install
 
       - name: Run the tests
