@@ -11,7 +11,7 @@ describe('Search in Fressnapf webshop', () => {
         const res = await req(appSearch).post(`https://webshop.fressnapf.hu/?woof_text=${searchItem}&post_type=product&swoof=1`);
         expect(res).toBe(200);
       } catch (err) {
-        console.log(`Error ${err}`);
+        console.log(`${err}`);
       }
     });
 });
