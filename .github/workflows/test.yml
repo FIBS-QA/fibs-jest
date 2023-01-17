@@ -27,11 +27,8 @@ jobs:
       - name: Remove node modules
         run: sudo rm -rf node_modules
       
-      - name: Install jest
-        run: npm install -g jest
-
       - name: Install Dependencies      
-        run: npm install npm-install-all -g
+        run: npm ci --ignore-scripts
 
       - name: Run the tests
         run: npm test
