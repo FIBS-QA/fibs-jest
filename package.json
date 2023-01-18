@@ -3,6 +3,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
     "@jest/globals": "^29.3.1",
     "@types/jest": "^29.2.5",
     "@types/supertest": "^2.0.12",
