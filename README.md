@@ -1,2 +1,2 @@
 # fibs-jest
-Project for learning testing Api with Jest 
+Project for learning testing Api with Jest and Supertest

@@ -1,5 +1,22 @@
 {
-    "compilerOptions": {
-        "lib": ["es6"]
-      }
+  "compilerOptions": {
+    "target": "es2017",
+    "types": ["node", "jest"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./dist",
+    "suppressImplicitAnyIndexErrors": true,
+  },
+  "compileOnSave": true,
+  "include": ["."]
 }
